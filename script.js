@@ -9,13 +9,13 @@ const excuses = [
 let count = 0;
 const button = document.getElementById("btn");
 const excuseText = document.getElementById("excuse");
-
+const counterText = document.getElementById("counter")
 
 
 button.addEventListener("click", function () {
   const randomIndex = Math.floor(Math.random() * excuses.length);
   excuseText.textContent = excuses[randomIndex];
   count = count + 1;
-  counter.textContent = "Excuses given: " + count;
+  counterText.textContent = "Excuses given: " + count;
 });
 
